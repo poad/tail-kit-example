@@ -1,0 +1,58 @@
+name: Build and Test
+ 
+on:
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  checks: write
+  contents: none
+  deployments: none
+  id-token: write
+  issues: none
+  packages: none
+  pull-requests: write
+  repository-projects: none
+  security-events: write
+  statuses: write
+
+jobs:
+  configure:
+    runs-on: ubuntu-latest
+    if: github.actor != 'dependabot[bot]'
+    steps:
+      - name: Pull request auto merge enabler
+        if: github.event_name == 'pull_request' && github.actor != 'dependabot[bot]'
+        uses: poad/github-pull-request-auto-merge-enable-action@v1.0.1
+        with:
+          pull_request_id: ${{ github.event.pull_request.node_id }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.event.repository.name }}
+          owner: ${{ github.repository_owner }}
+          merge_method: SQUASH
+
+  yarn-base-test:
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+        
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          check-latest: true
+
+      - name: Build
+        env:
+          NEXT_PUBLIC_AUTH0_DOMAIN: test
+          NEXT_PUBLIC_AUTH0_CLIENT_ID: test
+          NEXT_PUBLIC_CALLBACK_URL: http://localhost:3000
+        run: yarn install && yarn build
