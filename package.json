@@ -10,11 +10,11 @@
   "dependencies": {
     "@types/node": "^17.0.12",
     "@types/react": "^17.0.38",
-    "next": "^12.0.8",
+    "next": "^12.0.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-keyboard-key": "^2.0.6",
-    "tailwindcss": "^3.0.16"
+    "tailwindcss": "^3.0.17"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.10.1",
@@ -24,7 +24,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^16.1.0",
     "eslint-config-import": "^0.13.0",
-    "eslint-config-next": "^12.0.8",
+    "eslint-config-next": "^12.0.9",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.25.4",
@@ -39,8 +39,5 @@
     "swc-loader": "^0.1.15",
     "ts-jest": "^27.1.2",
     "typescript": "^4.5.5"
-  },
-  "resolutions": {
-    "node-fetch": "2.6.7"
   }
 }
