@@ -8,8 +8,8 @@ permissions:
   checks: write
   contents: write
   deployments: none
-  id-token: read
-  issues: none
+  id-token: write
+  issues: write
   packages: none
   pull-requests: write
   repository-projects: read
