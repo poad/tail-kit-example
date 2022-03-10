@@ -3522,10 +3522,10 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-keyboard-key@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/react-keyboard-key/-/react-keyboard-key-2.0.6.tgz#b81345b0f84b74e3cb7a8534274740b22a3bba7c"
-  integrity sha512-nZfkG/EJcDfSOZ9AfWpy3YFOkCmnNZIIrmOXR23vxBunKPirrutVVZcBxs+IQ0OvFrOxrNCVQtPvCz8ZqoZ5oQ==
+react-keyboard-key@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/react-keyboard-key/-/react-keyboard-key-2.0.7.tgz#c13d6587d56da52f979207adce1e5510c3973749"
+  integrity sha512-90iW0txM7722ZAepFI6Md5nFG3XxXNq5YJS+SX/M8/oP6q4iSnqe1/8gLO9+MEZzuceOp8yEFSVkAwh3VY/Iag==
 
 react@^17.0.2:
   version "17.0.2"
