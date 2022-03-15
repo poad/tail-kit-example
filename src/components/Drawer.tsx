@@ -1,6 +1,9 @@
+import dynamic from 'next/dynamic';
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-import KeyboardEventHandler from 'react-keyboard-event-handler';
+const KeyboardEventHandler = dynamic(
+  import('react-keyboard-event-handler'), { ssr: false },
+);
 
 const Drawer = (): JSX.Element => {
   const [open, setOpen] = React.useState<boolean>(false);
