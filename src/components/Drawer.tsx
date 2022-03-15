@@ -1,6 +1,6 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-import { KeyListenerContainer } from 'react-keyboard-key';
+import KeyboardEventHandler from 'react-keyboard-event-handler';
 
 const Drawer = (): JSX.Element => {
   const [open, setOpen] = React.useState<boolean>(false);
@@ -41,7 +41,7 @@ const Drawer = (): JSX.Element => {
           </svg>
         </button>
       </div>
-      <KeyListenerContainer onKeyDownCallback={onKeyDown}>
+      <KeyboardEventHandler onKeyEvent={onKeyDown}>
         {() => {
           return open ? (
             <>
@@ -81,7 +81,7 @@ const Drawer = (): JSX.Element => {
             </>
           ) : (<></>);
         }}
-      </KeyListenerContainer>
+      </KeyboardEventHandler>
     </div>
   );
 };
