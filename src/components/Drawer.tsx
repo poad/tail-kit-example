@@ -45,8 +45,7 @@ const Drawer = (): JSX.Element => {
         </button>
       </div>
       <KeyboardEventHandler onKeyEvent={onKeyDown}>
-        {() => {
-          return open ? (
+        { open ? (
             <>
               <div className="fixed top-0 left-0 z-30 w-screen h-screen bg-black opacity-20 sm:flex-row sm:justify-left" onClick={() =>setOpen(false)} />
               <div className="fixed top-0 left-0 z-40 w-72 h-screen z-40 aria-modal={true} animate-drawer-top">
@@ -82,8 +81,8 @@ const Drawer = (): JSX.Element => {
                 </nav>
               </div>
             </>
-          ) : (<></>);
-        }}
+          ) : (<></>)
+        }
       </KeyboardEventHandler>
     </div>
   );
