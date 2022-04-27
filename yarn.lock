@@ -525,27 +525,6 @@
     slash "^3.0.0"
     write-file-atomic "^4.0.1"
 
-"@jest/transform@^28.0.1":
-  version "28.0.1"
-  resolved "https://registry.yarnpkg.com/@jest/transform/-/transform-28.0.1.tgz#44fced5a366af7cc5f69745c92014bf45c408d90"
-  integrity sha512-45fxjycts6CTPMeusSICYhMkMgFAs1opvgEBYcMmukucJw/AgVEMsGFqheWyDzlU6GJ+h9cpft/zkTGPJtzRGQ==
-  dependencies:
-    "@babel/core" "^7.11.6"
-    "@jest/types" "^28.0.1"
-    "@jridgewell/trace-mapping" "^0.3.7"
-    babel-plugin-istanbul "^6.1.1"
-    chalk "^4.0.0"
-    convert-source-map "^1.4.0"
-    fast-json-stable-stringify "^2.0.0"
-    graceful-fs "^4.2.9"
-    jest-haste-map "^28.0.1"
-    jest-regex-util "^28.0.0"
-    jest-util "^28.0.1"
-    micromatch "^4.0.4"
-    pirates "^4.0.4"
-    slash "^3.0.0"
-    write-file-atomic "^4.0.1"
-
 "@jest/types@^27.5.1":
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/@jest/types/-/types-27.5.1.tgz#3c79ec4a8ba61c170bf937bcf9e98a9df175ec80"
@@ -744,13 +723,6 @@
     "@babel/types" "^7.0.0"
 
 "@types/babel__traverse@*", "@types/babel__traverse@^7.0.6":
-  version "7.17.1"
-  resolved "https://registry.yarnpkg.com/@types/babel__traverse/-/babel__traverse-7.17.1.tgz#1a0e73e8c28c7e832656db372b779bfd2ef37314"
-  integrity sha512-kVzjari1s2YVi77D3w1yuvohV2idweYXMCDzqBiVNN63TcDWrIlTVOYpqVrvbbyOE/IyzBoTKF0fdnLPEORFxA==
-  dependencies:
-    "@babel/types" "^7.3.0"
-
-"@types/babel__traverse@^7.0.6":
   version "7.17.1"
   resolved "https://registry.yarnpkg.com/@types/babel__traverse/-/babel__traverse-7.17.1.tgz#1a0e73e8c28c7e832656db372b779bfd2ef37314"
   integrity sha512-kVzjari1s2YVi77D3w1yuvohV2idweYXMCDzqBiVNN63TcDWrIlTVOYpqVrvbbyOE/IyzBoTKF0fdnLPEORFxA==
@@ -2647,14 +2619,6 @@ jest-mock@^28.0.2:
     "@jest/types" "^28.0.2"
     "@types/node" "*"
 
-jest-mock@^28.0.1:
-  version "28.0.1"
-  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-28.0.1.tgz#74d1e303e0825a83c54dceaf0f5095100667eeaa"
-  integrity sha512-pEi1eywUvu7Ko8T5QX6l4X4694cd9NqzyeFFnH7QYDEm4INKxNbgBKLnaNmp025SlH9WHHDkHTeY4zRHPicMHw==
-  dependencies:
-    "@jest/types" "^28.0.1"
-    "@types/node" "*"
-
 jest-pnp-resolver@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/jest-pnp-resolver/-/jest-pnp-resolver-1.2.2.tgz#b704ac0ae028a89108a4d040b3f919dfddc8e33c"
@@ -2826,15 +2790,6 @@ jest-worker@^28.0.2:
   version "28.0.2"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-28.0.2.tgz#75f7e5126541289ba02e9c1a67e46349ddb8141d"
   integrity sha512-pijNxfjxT0tGAx+8+OzZ+eayVPCwy/rsZFhebmC0F4YnXu1EHPEPxg7utL3m5uX3EaFH1/jwDxGa1EbjJCST2g==
-  dependencies:
-    "@types/node" "*"
-    merge-stream "^2.0.0"
-    supports-color "^8.0.0"
-
-jest-worker@^28.0.1:
-  version "28.0.1"
-  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-28.0.1.tgz#7abc005335a5937e6a4f8d24c980c7630a849012"
-  integrity sha512-Z3j1jfZwtt2ruKwU391a4/kKdYEId7Vy9+6Jeeq5Xl0glJDnOAvO5ixNmgMokMmbpet41jc4MpUx71ciyeTB/A==
   dependencies:
     "@types/node" "*"
     merge-stream "^2.0.0"
