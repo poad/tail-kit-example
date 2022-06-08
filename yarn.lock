@@ -3657,9 +3657,9 @@ supports-preserve-symlinks-flag@^1.0.0:
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
 swc-loader@*:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/swc-loader/-/swc-loader-0.2.1.tgz#43f2d1a746cf985476ca75ecac6234c7314fd9f8"
-  integrity sha512-opJG9R5Dl+Fa0QihOZO9v6vueB+JzRhJZw+c4ZRCqUHG2RZL10eHZRHMdQoDz6bvLp7XWe7XBIMUkuWtoGfMJw==
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/swc-loader/-/swc-loader-0.2.2.tgz#3e2f4efc91bd4a3928fb22cbdcfdd8135b5aec78"
+  integrity sha512-haRGcIwvRj8BLv7Un2qT/fMHNYN0DKJJPZV9gi39//vgglvpiFsXTM9jxLmpeNl3lhZ8G5/lGXkKfbvfE0VCsQ==
 
 tailwindcss@*:
   version "3.0.24"
