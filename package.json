@@ -12,14 +12,14 @@
   "dependencies": {
     "@types/node": "*",
     "@types/react": "*",
-    "next": "^12",
+    "next": "^13",
     "react": "*",
     "react-dom": "*",
     "react-keyboard-event-handler": "*",
     "tailwindcss": "*"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^12",
+    "@next/bundle-analyzer": "^13",
     "@types/react-keyboard-event-handler": "*",
     "@typescript-eslint/eslint-plugin": "*",
     "@typescript-eslint/parser": "*",
@@ -28,7 +28,7 @@
     "eslint-config-airbnb-base": "*",
     "eslint-config-airbnb-typescript": "*",
     "eslint-config-import": "*",
-    "eslint-config-next": "^12",
+    "eslint-config-next": "^13",
     "eslint-config-prettier": "*",
     "eslint-import-resolver-typescript": "*",
     "eslint-plugin-flowtype": "*",
