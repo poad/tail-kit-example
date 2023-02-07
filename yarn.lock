@@ -2783,12 +2783,12 @@ jest-haste-map@^29.4.1, jest-haste-map@^29.4.2:
     fsevents "^2.3.2"
 
 jest-leak-detector@^29.4.1:
-  version "29.4.1"
-  resolved "https://registry.yarnpkg.com/jest-leak-detector/-/jest-leak-detector-29.4.1.tgz#632186c546e084da2b490b7496fee1a1c9929637"
-  integrity sha512-akpZv7TPyGMnH2RimOCgy+hPmWZf55EyFUvymQ4LMsQP8xSPlZumCPtXGoDhFNhUE2039RApZkTQDKU79p/FiQ==
+  version "29.4.2"
+  resolved "https://registry.yarnpkg.com/jest-leak-detector/-/jest-leak-detector-29.4.2.tgz#8f05c6680e0cb46a1d577c0d3da9793bed3ea97b"
+  integrity sha512-Wa62HuRJmWXtX9F00nUpWlrbaH5axeYCdyRsOs/+Rb1Vb6+qWTlB5rKwCCRKtorM7owNwKsyJ8NRDUcZ8ghYUA==
   dependencies:
-    jest-get-type "^29.2.0"
-    pretty-format "^29.4.1"
+    jest-get-type "^29.4.2"
+    pretty-format "^29.4.2"
 
 jest-matcher-utils@^29.4.1:
   version "29.4.1"
