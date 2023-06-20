@@ -21,7 +21,7 @@ permissions:
   statuses: write
 
 jobs:
-  yarn-base-test:
+  pnpm-base-test:
     strategy:
       matrix:
         node-version: [18.x, 20.x]
@@ -29,6 +29,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 8.6.3
+          run_install: |
+            - recursive: false
+              args: [--no-frozen-lockfile]
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3.6.0
         with:
@@ -41,4 +51,4 @@ jobs:
           NEXT_PUBLIC_AUTH0_DOMAIN: test
           NEXT_PUBLIC_AUTH0_CLIENT_ID: test
           NEXT_PUBLIC_CALLBACK_URL: http://localhost:3000
-        run: yarn install && yarn lint --fix && yarn build
+        run: pnpm lint --fix && pnpm build

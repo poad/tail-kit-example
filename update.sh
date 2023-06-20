@@ -13,7 +13,7 @@ if [ $result -ne 0 ]; then
   exit $result
 fi
 pwd
-yarn install && yarn upgrade && yarn build
+pnpm install && pnpm up && pnpm build
 result=$?
 if [ $result -ne 0 ]; then
   cd "${CUR}"
