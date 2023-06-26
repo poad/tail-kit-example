@@ -34,7 +34,7 @@ jobs:
         name: Install pnpm
         id: pnpm-install
         with:
-          version: 8.6.3
+          version: 8.6.4
           run_install: |
             - recursive: false
               args: [--no-frozen-lockfile]
