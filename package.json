@@ -10,7 +10,7 @@
     "all": "pnpm lint --fix && pnpm build"
   },
   "dependencies": {
-    "@types/node": "^20.3.2",
+    "@types/node": "^20.3.3",
     "@types/react": "^18.2.14",
     "next": "^13.4.7",
     "react": "^18.2.0",
@@ -24,7 +24,7 @@
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "autoprefixer": "^10.4.14",
-    "eslint": "^8.43.0",
+    "eslint": "^8.44.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-import": "^0.13.0",
@@ -44,7 +44,7 @@
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
     "swc-loader": "^0.2.3",
-    "ts-jest": "^29.1.0",
+    "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
   }
 }
