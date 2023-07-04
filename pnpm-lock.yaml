@@ -759,18 +759,6 @@ packages:
       - supports-color
     dev: true
 
-  /@jest/types@29.5.0:
-    resolution: {integrity: sha512-qbu7kN6czmVRc3xWFQcAN03RAUamgppVUdXrvl1Wr3jlNF93o9mJbGcDWrwGB6ht44u7efB1qCFgVQmca24Uog==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/schemas': 29.6.0
-      '@types/istanbul-lib-coverage': 2.0.4
-      '@types/istanbul-reports': 3.0.1
-      '@types/node': 20.3.3
-      '@types/yargs': 17.0.24
-      chalk: 4.1.2
-    dev: true
-
   /@jest/types@29.6.0:
     resolution: {integrity: sha512-8XCgL9JhqbJTFnMRjEAO+TuW251+MoMd5BSzLiE3vvzpQ8RlBxy8NoyNkDhs3K3OL3HeVinlOl9or5p7GTeOLg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -3655,7 +3643,7 @@ packages:
         optional: true
     dependencies:
       '@jest/core': 29.5.0
-      '@jest/types': 29.5.0
+      '@jest/types': 29.6.0
       import-local: 3.1.0
       jest-cli: 29.5.0(@types/node@20.3.3)
     transitivePeerDependencies:
