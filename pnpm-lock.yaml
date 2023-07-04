@@ -590,7 +590,7 @@ packages:
       jest-message-util: 29.6.0
       jest-regex-util: 29.4.3
       jest-resolve: 29.6.0
-      jest-resolve-dependencies: 29.5.0
+      jest-resolve-dependencies: 29.6.0
       jest-runner: 29.5.0
       jest-runtime: 29.5.0
       jest-snapshot: 29.6.0
@@ -3443,8 +3443,8 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dev: true
 
-  /jest-resolve-dependencies@29.5.0:
-    resolution: {integrity: sha512-sjV3GFr0hDJMBpYeUuGduP+YeCRbd7S/ck6IvL3kQ9cpySYKqcqhdLLC2rFwrcL7tz5vYibomBrsFYWkIGGjOg==}
+  /jest-resolve-dependencies@29.6.0:
+    resolution: {integrity: sha512-eOfPog9K3hJdJk/3i6O6bQhXS+3uXhMDkLJGX+xmMPp7T1d/zdcFofbDnHgNoEkhD/mSimC5IagLEP7lpLLu/A==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       jest-regex-util: 29.4.3
