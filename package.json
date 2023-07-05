@@ -42,7 +42,7 @@
     "next-compose-plugins": "^2.2.1",
     "next-transpile-modules": "^10.0.0",
     "postcss": "^8.4.24",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "swc-loader": "^0.2.3",
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
