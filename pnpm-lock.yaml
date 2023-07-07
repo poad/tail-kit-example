@@ -3274,8 +3274,8 @@ packages:
       - supports-color
     dev: true
 
-  /jest-cli@29.6.0(@types/node@20.4.0):
-    resolution: {integrity: sha512-WvZIaanK/abkw6s01924DQ2QLwM5Q4Y4iPbSDb9Zg6smyXGqqcPQ7ft9X8D7B0jICz312eSzM6UlQNxuZJBrMw==}
+  /jest-cli@29.6.1(@types/node@20.4.0):
+    resolution: {integrity: sha512-607dSgTA4ODIN6go9w6xY3EYkyPFGicx51a69H7yfvt7lN53xNswEVLovq+E77VsTRi5fWprLH0yl4DJgE8Ing==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
     peerDependencies:
@@ -3659,7 +3659,7 @@ packages:
       '@jest/core': 29.6.1
       '@jest/types': 29.6.0
       import-local: 3.1.0
-      jest-cli: 29.6.0(@types/node@20.4.0)
+      jest-cli: 29.6.1(@types/node@20.4.0)
     transitivePeerDependencies:
       - '@types/node'
       - supports-color
