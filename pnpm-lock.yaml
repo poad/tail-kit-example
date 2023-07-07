@@ -3237,8 +3237,8 @@ packages:
       p-limit: 3.1.0
     dev: true
 
-  /jest-circus@29.6.0:
-    resolution: {integrity: sha512-LtG45qEKhse2Ws5zNR4DnZATReLGQXzBZGZnJ0DU37p6d4wDhu41vvczCQ3Ou+llR6CRYDBshsubV7H4jZvIkw==}
+  /jest-circus@29.6.1:
+    resolution: {integrity: sha512-tPbYLEiBU4MYAL2XoZme/bgfUeotpDBd81lgHLCbDZZFaGmECk0b+/xejPFtmiBP87GgP/y4jplcRpbH+fgCzQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/environment': 29.6.1
@@ -3250,7 +3250,7 @@ packages:
       co: 4.6.0
       dedent: 0.7.0
       is-generator-fn: 2.1.0
-      jest-each: 29.6.0
+      jest-each: 29.6.1
       jest-matcher-utils: 29.6.1
       jest-message-util: 29.6.1
       jest-runtime: 29.6.1
@@ -3315,7 +3315,7 @@ packages:
       deepmerge: 4.3.1
       glob: 7.2.3
       graceful-fs: 4.2.11
-      jest-circus: 29.6.0
+      jest-circus: 29.6.1
       jest-environment-node: 29.6.0
       jest-get-type: 29.4.3
       jest-regex-util: 29.4.3
@@ -3349,8 +3349,8 @@ packages:
       detect-newline: 3.1.0
     dev: true
 
-  /jest-each@29.6.0:
-    resolution: {integrity: sha512-d0Jem4RBAlFUyV6JSXPSHVUpNo5RleSj+iJEy1G3+ZCrzHDjWs/1jUfrbnJKHdJdAx5BCEce/Ju379WqHhQk4w==}
+  /jest-each@29.6.1:
+    resolution: {integrity: sha512-n5eoj5eiTHpKQCAVcNTT7DRqeUmJ01hsAL0Q1SMiBHcBcvTKDELixQOGMCpqhbIuTcfC4kMfSnpmDqRgRJcLNQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.6.1
