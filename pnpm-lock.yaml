@@ -29,8 +29,8 @@ dependencies:
 
 devDependencies:
   '@next/bundle-analyzer':
-    specifier: ^13.4.13
-    version: 13.4.13
+    specifier: ^13.4.15
+    version: 13.4.15
   '@types/react-keyboard-event-handler':
     specifier: ^1.5.2
     version: 1.5.2
@@ -791,8 +791,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@next/bundle-analyzer@13.4.13:
-    resolution: {integrity: sha512-XygyFn3V61vF9LkU1zM6GlAMp8h7FbApaLA40anMGhZtQt/0S1tGSNImv9T/Z3ZTbWIQTcbYxyHIM6Fv/uSGrA==}
+  /@next/bundle-analyzer@13.4.15:
+    resolution: {integrity: sha512-wQT/nRWOzcgys9dRWdVTqQkY97IOgLu1iPuq7eiZp+TS6TXLVMWL1kBCnHv3Mscg5pwM5gxPl1tvStWCieYpaw==}
     dependencies:
       webpack-bundle-analyzer: 4.7.0
     transitivePeerDependencies:
