@@ -636,7 +636,7 @@ packages:
     resolution: {integrity: sha512-6zIhM8go3RV2IG4aIZaZbxwpOzz3ZiM23oxAlkquOIole+G6TrbeXnykxWYlqF7kz2HlBjdKtca20x9atkEQYg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      jest-get-type: 29.4.3
+      jest-get-type: 29.6.3
     dev: true
 
   /@jest/expect-utils@29.6.3:
@@ -2858,7 +2858,7 @@ packages:
     dependencies:
       '@jest/expect-utils': 29.6.2
       '@types/node': 20.5.1
-      jest-get-type: 29.4.3
+      jest-get-type: 29.6.3
       jest-matcher-utils: 29.6.2
       jest-message-util: 29.6.2
       jest-util: 29.6.2
@@ -3593,7 +3593,7 @@ packages:
       graceful-fs: 4.2.11
       jest-circus: 29.6.2
       jest-environment-node: 29.6.2
-      jest-get-type: 29.4.3
+      jest-get-type: 29.6.3
       jest-regex-util: 29.4.3
       jest-resolve: 29.6.2
       jest-runner: 29.6.3
@@ -3615,7 +3615,7 @@ packages:
     dependencies:
       chalk: 4.1.2
       diff-sequences: 29.4.3
-      jest-get-type: 29.4.3
+      jest-get-type: 29.6.3
       pretty-format: 29.6.2
     dev: true
 
@@ -3642,7 +3642,7 @@ packages:
     dependencies:
       '@jest/types': 29.6.1
       chalk: 4.1.2
-      jest-get-type: 29.4.3
+      jest-get-type: 29.6.3
       jest-util: 29.6.2
       pretty-format: 29.6.2
     dev: true
@@ -3669,11 +3669,6 @@ packages:
       '@types/node': 20.5.1
       jest-mock: 29.6.3
       jest-util: 29.6.3
-    dev: true
-
-  /jest-get-type@29.4.3:
-    resolution: {integrity: sha512-J5Xez4nRRMjk8emnTpWrlkyb9pfRQQanDrvWHhsR1+VUfbwxi30eVcZFlcdGInRibU4G5LwHXpI7IRHU0CY+gg==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dev: true
 
   /jest-get-type@29.6.3:
@@ -3733,7 +3728,7 @@ packages:
     dependencies:
       chalk: 4.1.2
       jest-diff: 29.6.2
-      jest-get-type: 29.4.3
+      jest-get-type: 29.6.3
       pretty-format: 29.6.2
     dev: true
 
@@ -3975,7 +3970,7 @@ packages:
       expect: 29.6.2
       graceful-fs: 4.2.11
       jest-diff: 29.6.2
-      jest-get-type: 29.4.3
+      jest-get-type: 29.6.3
       jest-matcher-utils: 29.6.2
       jest-message-util: 29.6.2
       jest-util: 29.6.2
@@ -4045,7 +4040,7 @@ packages:
       '@jest/types': 29.6.1
       camelcase: 6.3.0
       chalk: 4.1.2
-      jest-get-type: 29.4.3
+      jest-get-type: 29.6.3
       leven: 3.1.0
       pretty-format: 29.6.2
     dev: true
