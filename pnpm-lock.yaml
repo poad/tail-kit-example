@@ -1693,7 +1693,7 @@ packages:
     dependencies:
       browserslist: 4.21.10
       caniuse-lite: 1.0.30001524
-      fraction.js: 4.2.1
+      fraction.js: 4.3.1
       normalize-range: 0.1.2
       picocolors: 1.0.0
       postcss: 8.4.28
@@ -2825,8 +2825,8 @@ packages:
       is-callable: 1.2.7
     dev: true
 
-  /fraction.js@4.2.1:
-    resolution: {integrity: sha512-/KxoyCnPM0GwYI4NN0Iag38Tqt+od3/mLuguepLgCAKPn0ZhC544nssAW0tG2/00zXEYl9W+7hwAIpLHo6Oc7Q==}
+  /fraction.js@4.3.1:
+    resolution: {integrity: sha512-nx0cki48JBA6ThPeUpeKCNpdhEl/9bRS+dAEYnRUod+Z1jhFfC3K/mBLorZZntqHM+GTH3/dkkpfoT3QITYe7g==}
     dev: true
 
   /fs.realpath@1.0.0:
