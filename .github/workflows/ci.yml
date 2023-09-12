@@ -29,7 +29,7 @@ jobs:
         if: github.event_name == 'pull_request' && github.actor != 'dependabot[bot]'
         uses: poad/github-pull-request-auto-merge-enable-action@v1.0.5
         with:
-          pull_request_id: ${{ github.event.pull_request.node_id }}
+          pull_request_number: ${{ github.event.pull_request.number }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.event.repository.name }}
           owner: ${{ github.repository_owner }}
@@ -48,7 +48,7 @@ jobs:
         name: Install pnpm
         id: pnpm-install
         with:
-          version: 8.6.4
+          version: latest
           run_install: |
             - recursive: false
               args: [--no-frozen-lockfile]
