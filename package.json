@@ -11,7 +11,7 @@
     "all": "pnpm lint --fix && pnpm build"
   },
   "dependencies": {
-    "@types/node": "^20.8.0",
+    "@types/node": "^20.8.2",
     "@types/react": "^18.2.24",
     "next": "^13.5.3",
     "react": "^18.2.0",
@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13.5.3",
-    "@typescript-eslint/eslint-plugin": "^6.7.3",
-    "@typescript-eslint/parser": "^6.7.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.50.0",
     "eslint-config-airbnb-base": "^15.0.0",
