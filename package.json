@@ -11,7 +11,7 @@
     "all": "pnpm lint --fix && pnpm build"
   },
   "dependencies": {
-    "@types/node": "^20.11.16",
+    "@types/node": "^20.11.17",
     "@types/react": "^18.2.55",
     "next": "^14.1.0",
     "react": "^18.2.0",
