@@ -38,6 +38,6 @@
     "next-transpile-modules": "^10.0.1",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   }
 }
