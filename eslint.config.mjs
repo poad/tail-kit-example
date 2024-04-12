@@ -1,30 +1,82 @@
-import nextPlugin from '@next/eslint-plugin-next';
-import reactPlugin from 'eslint-plugin-react';
-import hooksPlugin from 'eslint-plugin-react-hooks';
-import typescriptParser from '@typescript-eslint/parser';
+// @ts-check
 
-export default [
+import eslint from '@eslint/js';
+import nextPlugin from '@next/eslint-plugin-next';
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
+import importPlugin from 'eslint-plugin-import';
+
+import prettier from 'eslint-config-prettier';
+import tseslint from 'typescript-eslint';
+import { FlatCompat } from '@eslint/eslintrc';
+
+const compat = new FlatCompat();
+
+export default tseslint.config(
   {
-    languageOptions: {
-      parser: typescriptParser,
-    },
-    files: ['**/*.ts', '**/*.tsx'],
     ignores: [
       '**/*.d.ts',
-      '*.js',
+      '*.{js,jsx}',
       'src/tsconfig.json',
-      'src/next-env.d.ts',
       'src/stories',
+      '**/*.css',
       'node_modules/**/*',
+      '.next/*',
+      'out',
+      '.storybook',
     ],
+  },
+  {
+    files: ['src/**/*.{jsx,ts,tsx}'],
+  },
+  eslint.configs.recommended,
+  ...tseslint.configs.recommended,
+  {
+    files: ['src/**/*.{jsx,tsx}'],
+    extends: [
+      ...compat.config(reactHooksPlugin.configs.recommended),
+    ],
+    settings: {
+      react: {
+        version: 'detect',
+      },
+      formComponents: ['Form'],
+      linkComponents: [
+        { name: 'Link', linkAttribute: 'to' },
+        { name: 'NavLink', linkAttribute: 'to' },
+      ],
+      'import/resolver': {
+        typescript: {},
+      },
+    },
+  },
+  {
+    files: ['src/**/*.{ts,tsx}'],
     plugins: {
-      react: reactPlugin,
-      'react-hooks': hooksPlugin,
+      import: importPlugin,
+    },
+    extends: [
+      ...tseslint.configs.recommended,
+      ...compat.config(importPlugin.configs.recommended),
+      ...compat.config(importPlugin.configs.typescript),
+    ],
+    settings: {
+      'import/internal-regex': '^~/',
+      'import/resolver': {
+        node: {
+          extensions: ['.ts', '.tsx'],
+        },
+        typescript: {
+          alwaysTryTypes: true,
+        },
+      },
+    },
+  },
+  {
+    files: ['src/**/*.{js,jsx,ts,tsx}'],
+    plugins: {
       '@next/next': nextPlugin,
     },
     rules: {
-      ...reactPlugin.configs['jsx-runtime'].rules,
-      ...hooksPlugin.configs.recommended.rules,
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs['core-web-vitals'].rules,
       '@next/next/no-duplicate-head': 'off',
@@ -33,6 +85,17 @@ export default [
     },
   },
   {
-    ignores: ['./.next/*'],
+    files: ['src/**/*.{js,jsx,ts,tsx}'],
+    rules: {
+      ...prettier.rules,
+    },
   },
-];
+  {
+    rules: {
+      'react/display-name': 'off',
+      'import/namespace': 'off',
+      'import/no-named-as-default': 'off',
+      'import/no-named-as-default-member': 'off',
+    },
+  },
+);
